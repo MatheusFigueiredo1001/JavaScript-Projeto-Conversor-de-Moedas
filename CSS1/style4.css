@@ -1,0 +1,24 @@
+.box {
+    background: darkblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.box-2 {
+    background: yellow;
+   
+}
+
+.box-3 {
+    background: darkgreen;
+    
+}
+
+/*
+Display = Como é a distribuição dos itens na tela;
+Block = Ocupa toda linha;
+Inline = Em linha, não aceita valores de width e height;
+Inline-Block = Junção dos dois, vai ficar um do lado do outro, mas consegue colocar valores de width e height
+*/

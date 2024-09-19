@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
+h1 {
+    color: darkred;
+    font-size: 40px;
+    font-family: "Grey Qo", cursive;
+    text-shadow: 10px 10px 10px darkred;
+}
+
+p {
+    color: darkblue; /* Cor do texto */
+    font-family: "Grey Qo", cursive; /* Fonte do texto */
+    font-weight: 400px; /* expessidade das palavras */
+    font-size: 50px; /* Tamanho da fonte */
+    font-style: italic; /* Tipo do texto (ex: style */
+    line-height: 100px; /* Espaçamento das linhas */
+    letter-spacing: 10px; /* Espaçamento das letras */
+    word-spacing: 10px; /* Espaçamento das palavras */
+    text-align: center; /* Alinhamento dos textos*/
+    text-transform: capitalize; /* Capitalizar os textos (ex: deixar tudo maiúsculo ou minúsculo */
+    text-decoration: overline; /* Formatação do texto (ex: underline, overline, etc) */
+
+}
+
+button {
+    background: green;
+    color: yellow;
+}

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    margin-top: 47px;
+    margin-left: 42px;
+}
+
+.link-header1, .link-header2, .link-header3, .link-header4 {
+    width: 87px;
+    height: 20px;
+    top: 47px;
+    left: 42px;
+    margin-right: 32px;
+    padding: 0px 4px 0px 0px;
+    cursor: pointer;
+    color: #17233D;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.875px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-header {
+    width: 124px;
+    height: 51px;
+    top: 47px;
+    left: 42px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    background: #6FBF44;
+    color: #FFFFFF;
+    border: 1px solid #4CB538;
+    border-radius: 30px;
+}
+
+.img-log {
+    top: 290.57px;
+    left: 300.48px;
+    display: inline-block;
+    margin-left: 42px;
+}
+
+section {
+    display: inline-block;
+    margin-left: 42px;
+}
+
+h1 {
+    width: 582px;
+    height: 164px;
+    top: 342px;
+    left: 801px;
+    font-family: Poppins;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0.5961538553237915px;
+    text-align: left;
+    color: #161A49;
+}
+
+p {
+    width: 493px;
+    height: 99px;
+    top: 553px;
+    left: 801px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #4B505A;
+}
+
+.link-main {
+    width: 112px;
+    height: 27px;
+    top: 707px;
+    left: 801px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-align: left;
+    cursor: pointer;
+    background: transparent;
+    color: #6FBF44;
+    border: none;
+    text-decoration: none;
+}
+
+.link-main:visited {
+    color: darkolivegreen;
+    opacity: .8;
+}
+
+.link-main:hover {
+    color: indigo;
+    opacity: .8;
+}
+
+.link-main:active {
+    color: red;
+}
+
+.link-header1:hover, .link-header2:hover, .link-header3:hover, .link-header4:hover {
+    color: indigo;
+    opacity: .4;
+}
+
+.link-header1:active, .link-header2:active, .link-header3:active, .link-header4:active {
+    opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-top: 10px;
+        margin-left: 25px;
+        justify-content: right; /* Centraliza os links */
+    }
+
+    /* Ocultar os links para mobile (caso necessário) */
+    .link-header1, .link-header2, .link-header3, .link-header4 {
+        display: none;
+    }
+
+    .link-main {
+        justify-content: right; /* Centraliza os links */
+    }
+
+    /* Responsividade do texto */
+    h1 {
+        font-size: 32px; /* Diminui o tamanho no mobile */
+        line-height: 42px;
+        text-align: center;
+        width: 100%; /* Garantir que ocupe a tela toda */
+        padding: 20px; /* Espaçamento para evitar sobreposição */
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 100px;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+}
