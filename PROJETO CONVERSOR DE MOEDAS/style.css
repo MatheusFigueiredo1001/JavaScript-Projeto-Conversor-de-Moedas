@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #080852;
+}
+
+.gif {
+  Width: 300px;
+  Height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+main {
+  Width: 375px;
+  border-radius: 20px;
+  background: #F4F4F4;
+  margin: 0 auto;
+  padding: 44px 24px 23px;
+}
+
+label {
+  color: #777777;
+  font-weight: 400px;
+  font-size: 14px;
+}
+
+select,
+input {
+  background: #FFFFFF;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  border: 1px solid #BBBBBB;
+  margin-bottom: 24px;
+  padding-left: 18px;
+  font-weight: 700px;
+  font-size: 16px;
+  color: #555555;
+  cursor: pointer;
+}
+
+input {
+  cursor: text;
+}
+
+button {
+  width: 100%;
+  height: 48px;
+  top: 329px;
+  left: 24px;
+  border-radius: 5px 0px 0px 0px;
+  opacity: 0px;
+  background: #080852;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+section {
+  margin-top: 36px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seta {
+  margin: 15px 0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.coin {
+  color: #777777;
+  font-size: 20px;
+}
+
+.coin-values {
+  color: #555555;
+  font-size: 20px;
+  font-weight: 700px;
+}
