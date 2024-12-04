@@ -1,0 +1,25 @@
+{
+    "nome": "Matheus",
+    "idade": 23,
+    "filhos": null,
+    "hobbies": ["games", "animes", "serie", "amigos"],
+    "casado": false,
+    "empresas": {
+        "devclub": {
+            "fundada": 21,
+            "colaboradores": 40
+        },
+        "monster-app": {
+            "fundada": 2023,
+            "colaboradores": 4
+        },
+        "atlas": {
+            "fundada": 2023,
+            "colaboradores": 5
+        },
+        "agenda_sua": {
+            "fundada": 2023,
+            "colaboradores": 4
+        }
+    }
+}

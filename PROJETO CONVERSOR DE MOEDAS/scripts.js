@@ -13,6 +13,8 @@ function convertValues() {
     const ieneToday = 0.038
     const realToday = 1.00
 
+    const data = fetch(" https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then (responde => response.json()) // Obtem dados vindo de API (Servidor)
+
     
     if (currencySelect.value == "dolar") {
         currencyConverted.innerHTML = new Intl.NumberFormat("en-US", {

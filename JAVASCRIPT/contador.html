@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+
+<body>
+    <h1> 0 </h1>
+    <button onclick="start()"> start </button>
+    <button onclick="stop()"> stop </button>
+</body>
+
+<script>
+
+    /*
+        setTimeout => Ferramenta que ajuda a contar que executa apenas uma vez
+        setInterval => Ferramenta que ajuda a contar que executa infinitas vezes
+        clearInterval => Pausa o setInterval
+    */
+
+    let number = 0
+    let cont
+    let h1 = document.querySelector("h1")
+
+    function start() {
+        cont = setInterval(function () {
+            number++
+            h1.innerHTML = number
+        }, 1000)
+    }
+
+    function stop(){
+        clearInterval(cont)
+    }
+
+</script>
+
+</html>

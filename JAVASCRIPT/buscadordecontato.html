@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+</head>
+
+<body>
+    <input placeholder="Digite o contato">
+    <p></p>
+    <button onclick="search()"> Procurar contato </button>
+</body>
+
+<script>
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const contacts = [
+        { name: "Itachi", number: "(11)912345678" },
+        { name: "Levi", number: "(21)990123456" },
+        { name: "Luffy", number: "(85)978901234" },
+        { name: "Shanks", number: "(12)956789012" },
+        { name: "Sanji", number: "(41)934567890" },
+    ]
+
+    /*function search() {
+
+    for (let i = 0; i < contacts.length; i++)
+
+        if (input.value.toLocaleLowerCase() === contacts[i].name.toLocaleLowerCase()) {
+            p.innerHTML = `Contato encontrado Nome:${contacts[i].name} Tel:${contacts[i].number}`
+            break
+        } 
+        else {
+            p.innerHTML = "Usuário não encontrado"
+        }
+
+    }*/
+
+    /*function search(){
+   for (const characters of contacts) {
+    if (input.value.toLocaleLowerCase() === characters.name.toLocaleLowerCase()) {
+            p.innerHTML = `Contato encontrado Nome:${characters.name} Tel:${characters.number}`
+            break
+        } 
+        else {
+            p.innerHTML = "Usuário não encontrado"
+        }
+   }
+
+}*/
+
+function search(){
+    let i = 0
+    while (i < contacts.length) {
+        if(input.value.toLocaleLowerCase() === contacts[i].name.toLocaleLowerCase()) {
+            p.innerHTML = `Contato encontrado Nome:${contacts[i].name} Tel:${contacts[i].number}`;
+            return
+        }
+        i++;
+    }
+    p.innerHTML = "Usuário não encontrado"
+}
+
+</script>
+
+</html>
