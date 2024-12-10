@@ -33,7 +33,7 @@ button:hover {
 }
 
 li {
-    border: 2px solid chartreuse;
+    border: 2px solid rgb(89, 9, 136);
     border-radius: 5px;
     padding: 5px;
 }
