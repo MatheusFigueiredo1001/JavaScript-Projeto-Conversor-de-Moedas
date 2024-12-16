@@ -9,6 +9,7 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #f4f4f9;
+    padding-bottom: 120px;
 }
 
 /* Estilizar o contêiner principal */
@@ -23,6 +24,16 @@ input {
     border-radius: 5px;
     margin-right: 10px;
     width: 200px;
+}
+
+.my-button
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0px 10px 10px 0px;
+    width: 200px;
+    padding-bottom: 10px;
 }
 
 /* Estilizar o select */
@@ -62,4 +73,16 @@ ul li {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.alta {
+    color: red;  /* Prioridade alta em vermelho */
+}
+
+.média {
+    color: orange;  /* Prioridade média em laranja */
+}
+
+.baixa {
+    color: green;  /* Prioridade baixa em verde */
 }

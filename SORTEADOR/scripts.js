@@ -9,8 +9,9 @@ function generateNumber() {
     else {
 
         const result = Math.floor(Math.random() * (max - min + 1)) + min;
+        const resultDisplay = document.querySelector(".result-display")
 
-        alert(result)
+        resultDisplay.textContent = `O número sorteado é ${result}`
     }
 
 }
