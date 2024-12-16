@@ -10,14 +10,15 @@
 
 <body>
     <img src="./img.png" alt="dados">
-    <p> Sortear um número </p>
+    <p> Sortear número </p>
+    <input placeholder="Quantidade" class="input-quantity" type="number" min="1">
     <div>
         <input placeholder="Entre" class="input-min" type="number">
         <input placeholder="E" class="input-max" type="number">
     </div>
 
     <button onclick="generateNumber()"> Sortear </button>
-    <p class="result-display"></p>
+    <p class="result-display">Os números sorteados serão exibidos aqui</p>
 </body>
 
 <script src="./scripts.js"> </script>
