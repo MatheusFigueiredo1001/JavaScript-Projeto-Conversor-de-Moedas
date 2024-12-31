@@ -13,7 +13,7 @@ function formatCurrent(value) { //Formatar para moeda
 }
 
 function showAll(productsArray) {
-    let myLi = ''
+    let myLi = '' //Resetar a contagem antes de alterar algum dado
 
     productsArray.forEach(products => {
         myLi +=
@@ -50,11 +50,12 @@ function sumAll() {
 }
 
 function filterVegan() {
-    const itemVegan = menuOptions.filter((item) => item.vegan)
+    const itemVegan = menuOptions.filter((item) => item.vegan)//Por padrão o valor já vem como true
+    showAll(filterVegan)
     showAll(itemVegan)
 }
 
-buttonShowAll.addEventListener('click', () => showAll(menuOptions))
+buttonShowAll.addEventListener('click', () => showAll(menuOptions)) //menuOptions é chamado nesta função para poder retornar dados ao clicar no botão, necessário uma arrow function pois caso deixe apenas com parenteses, o site mostra as informações direto na tela, sem precisar clicar no botão
 buttonMapAll.addEventListener('click', mapAll)
 buttonSumAll.addEventListener('click', sumAll)
 buttonFilterVegan.addEventListener('click', filterVegan)
