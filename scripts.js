@@ -1,15 +1,17 @@
 const convertButton = document.querySelector('.convert-button') //Buscando a classe do botão
 const selectCurrency = document.querySelector('.select-currency') //Seleciona qual moeda vai ser convertida
 
-function convertValues() {
+async function convertValues() {
     const inputValue = document.querySelector('.input-value').value // Pega o valor do input
     const currencyValueToConvert = document.querySelector('.currency-value-to-convert') //Valor em real
     const currencyValue = document.querySelector('.currency-value') //Outras moedas
 
-    const dolarToday = 6.07
-    const euroToday = 6.35
-    const libraToday = 7.68
-    const ieneToday = 0.040
+    const data = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL').then(response => response.json())
+    console.log(data)
+
+    const dolarToday = data.USDBRL.high
+    const euroToday = data.EURBRL.high
+    const bitToday = data. BTCBRL.high
 
     if (selectCurrency.value == 'dolar') {
         currencyValue.innerHTML = new Intl.NumberFormat('en-US', {
@@ -25,18 +27,11 @@ function convertValues() {
         }).format(inputValue / euroToday) //Select em euro
     }
 
-    if (selectCurrency.value == 'libra') {
-        currencyValue.innerHTML = new Intl.NumberFormat('en-IN', {
+    if (selectCurrency.value == 'bitcoin') {
+        currencyValue.innerHTML = new Intl.NumberFormat('en-US', {
             style: 'currency',
-            currency: 'GBP'
-        }).format(inputValue / libraToday) //Select em libra
-    }
-
-    if (selectCurrency.value == 'iene') {
-        currencyValue.innerHTML = new Intl.NumberFormat('ja-JP', {
-            style: 'currency',
-            currency: 'JPY'
-        }).format(inputValue / ieneToday) //Select em iene
+            currency: 'BTC'
+        }).format(inputValue / euroToday) //Select em euro
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat('pt-BR', {
@@ -44,7 +39,7 @@ function convertValues() {
         currency: 'BRL'
     }).format(inputValue) //Coloca o valor digitado no input na parte web, ficando visualmente mais bonito
 
-    console.log(convertedValue)
+    console.log(`Valor convertido: ${currencyValue.innerHTML}`)
 }
 
 function changeCurrency() {
@@ -61,14 +56,9 @@ function changeCurrency() {
         currencyImg.src = './assets/euro.png'
     }
 
-    if (selectCurrency.value == 'libra') {
-        currencyChange.innerHTML = 'Libra esterlina'
-        currencyImg.src = './assets/libra.png'
-    }
-
-    if (selectCurrency.value == 'iene') {
-        currencyChange.innerHTML = 'Iene'
-        currencyImg.src = './assets/iene.png'
+    if (selectCurrency.value == 'bitcoin') {
+        currencyChange.innerHTML = 'Bitcoin'
+        currencyImg.src = './assets/bitcoin.png'
     }
 
 }
