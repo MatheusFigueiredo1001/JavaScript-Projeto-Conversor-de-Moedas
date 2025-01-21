@@ -1,0 +1,1 @@
+Projeto que fiz como treinamento de converter a moeda real para outras moedas, como dolar, euro, libra e iene, no momento estou aprendendo então coloquei essas moedas, conforme vou aprimorando meus conhecimentos, pretendo adicionar mais moedas e também fazer todas elas se converterem entre si, não apenas do real.
