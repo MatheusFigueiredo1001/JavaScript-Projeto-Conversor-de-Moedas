@@ -2,7 +2,7 @@ const convertButton = document.querySelector('.convert-button') //Buscando a cla
 const selectCurrency = document.querySelector('.select-currency') //Seleciona qual moeda vai ser convertida
 
 async function convertValues() {
-    const inputValue = document.querySelector('.input-value').value // Pega o valor do input
+    const inputValue = parseFloat (document.querySelector('.input-value').value) // Pega o valor do input
     const currencyValueToConvert = document.querySelector('.currency-value-to-convert') //Valor em real
     const currencyValue = document.querySelector('.currency-value') //Outras moedas
 
@@ -11,27 +11,27 @@ async function convertValues() {
 
     const dolarToday = data.USDBRL.high
     const euroToday = data.EURBRL.high
-    const bitToday = data. BTCBRL.high
+    const bitToday = data.BTCBRL.high
 
     if (selectCurrency.value == 'dolar') {
         currencyValue.innerHTML = new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'USD'
-        }).format(inputValue / dolarToday) //Select em dolar
+        }).format((inputValue / dolarToday).toFixed(2)) //Select em dolar
     }
 
     if (selectCurrency.value == 'euro') {
         currencyValue.innerHTML = new Intl.NumberFormat('de-DE', {
             style: 'currency',
             currency: 'EUR'
-        }).format(inputValue / euroToday) //Select em euro
+        }).format((inputValue / euroToday).toFixed(2)) //Select em euro
     }
 
     if (selectCurrency.value == 'bitcoin') {
         currencyValue.innerHTML = new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'BTC'
-        }).format(inputValue / euroToday) //Select em euro
+        }).format((inputValue / bitToday).toFixed(2)) //Select em bitcoin
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat('pt-BR', {
