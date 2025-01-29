@@ -37,7 +37,7 @@ async function convertValues() {
     currencyValueToConvert.innerHTML = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL'
-    }).format(inputValue) //Coloca o valor digitado no input na parte web, ficando visualmente mais bonito
+    }).format((inputValue).toFixed(2)) //Coloca o valor digitado no input na parte web, ficando visualmente mais bonito
 
     console.log(`Valor convertido: ${currencyValue.innerHTML}`)
 }
