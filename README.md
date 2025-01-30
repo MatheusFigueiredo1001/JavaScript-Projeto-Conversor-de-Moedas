@@ -16,7 +16,7 @@ Como Rodar o Projeto
 
 Clone o Repositório:
 
-git clone https://github.com/seuusuario/conversor-moedas.git
+git clone https://github.com/MatheusFigueiredo1001/JavaScript-Projeto-Conversor-de-Moedas.git
 
 Acesse a Pasta do Projeto:
 
