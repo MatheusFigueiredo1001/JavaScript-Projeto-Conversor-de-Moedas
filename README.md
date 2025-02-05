@@ -12,19 +12,7 @@ Insira um valor em Reais no campo de entrada;
 Escolha a moeda de destino (Dólar, Euro ou Bitcoin);
 Clique no botão "Converter" para visualizar o resultado;
 
-Como Rodar o Projeto
-
-Clone o Repositório:
-
-git clone https://github.com/MatheusFigueiredo1001/JavaScript-Projeto-Conversor-de-Moedas.git
-
-Acesse a Pasta do Projeto:
-
-cd conversor-moedas
-
-Abra o Arquivo HTML no Navegador:
-
-Não é necessário instalar dependências, pois é um projeto estático.
+O projeto estará disponível em https://matheusfigueiredo1001.github.io/Conversor-de-Moedas/
 
 Projeto concluído com algumas pequenas melhorias a serem feitas, ste projeto foi criado para praticar habilidades em integração com APIs e manipulação de dados dinâmicos.
 API utilizada: https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL
